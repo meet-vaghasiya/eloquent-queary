@@ -1,0 +1,4 @@
+1. call UserSeeder in DataBaseSeeder to call UserSeeder   $this->call(UserSeeder::class)
+2. use UserSeeder instead of User in DataBaseSeeder file otherwise it will give call is not define in User::setContainer error
+3. don't forgot to call create method in seeder otherwise seeder is run but don't create any seeder in database.
+    User::factory()->count(10)->create()

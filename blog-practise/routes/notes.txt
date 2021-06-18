@@ -1,0 +1,1 @@
+1. always user -mcr or -mcrfs for creating migration,controller ,resouce ,factory and seeder with model like php artisan make:model Post -mcrfs or use --all
