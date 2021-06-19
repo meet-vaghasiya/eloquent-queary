@@ -6,4 +6,15 @@
 
         for (var i = 0; i < compacted.length; i++) {
         compacted[i].className = 'sf-dump-expanded';
+        
         }
+
+
+  3. if we use search like where,orWhere,orWhre than use search by FULLTEXT INDEX  method which is faster than index in all  column  at once like bellow.
+
+DB::statement('ALTER TABLE POST ADD FULL TEXT fulltext_index_for_posts(title,content) ') 
+
+
+4. in passing string: 'abc xyz mno'=> 'means column should content any one from all'
+4.  'abc +xyz mno'=> 'means column must content xyz and any one from  abc or mno'
+4.  'abc +xyz -mno'=> 'means column must content xyz and must not content mno. also added which includes abc'

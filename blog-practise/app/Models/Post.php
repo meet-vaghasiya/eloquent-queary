@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function comment()
+    public function comments()
     {
         return $this->hasMany(Comment::class);
     }
