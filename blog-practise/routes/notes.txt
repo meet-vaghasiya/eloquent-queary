@@ -1,1 +1,9 @@
 1. always user -mcr or -mcrfs for creating migration,controller ,resouce ,factory and seeder with model like php artisan make:model Post -mcrfs or use --all
+
+
+2. tampor monkey script for dump data expansion:     
+        var compacted = document.querySelectorAll('.sf-dump-compact');
+
+        for (var i = 0; i < compacted.length; i++) {
+        compacted[i].className = 'sf-dump-expanded';
+        }
